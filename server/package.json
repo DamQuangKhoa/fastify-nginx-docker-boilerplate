@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "fastify": "^2.14.1",
+    "fastify-autoload": "^1.2.2",
+    "lodash": "^4.17.15",
+    "nconf": "^0.10.0",
+    "uuidv4": "^6.1.0"
+  },
+  "scripts": {
+    "start": " node app.js"
+  }
+}
