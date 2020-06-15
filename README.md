@@ -27,6 +27,14 @@ git clone https://github.com/DamQuangKhoa/fastify-nginx-docker-boilerplate.git
 - Docker
 - Docker Compose
 
+## Technologies
+- Docker
+- Docker Compose
+- Fastify
+- Nginx
+- ORM Sequellize
+- Postgresql Database
+
 ## Documents
 - Part 1:
 https://medium.com/@tarusharora/how-to-build-a-node-js-api-with-fastify-mongodb-docker-and-postman-f1ffab912ece
@@ -35,19 +43,10 @@ https://medium.com/@tarusharora/how-to-build-a-node-js-api-with-fastify-mongodb-
 
 ## Install
 
-- Start The Backend
-
-```sh
-1. git clone https://github.com/DamQuangKhoa/fastify-nginx-docker-boilerplate.git
-2. cd fastify-nginx-docker-boilerplate
-3. bash start.sh
-4. Run in http://localhost:3050/
-```
 - Start With ORM Sequelize
 ```sh
 1. git clone https://github.com/DamQuangKhoa/fastify-nginx-docker-boilerplate.git
 2. cd fastify-nginx-docker-boilerplate
-3. git checkout postgre_db
 3. bash start.sh
 4. Run in http://localhost:3050/
 ```
