@@ -3,10 +3,8 @@
     "fastify": "^2.14.1",
     "fastify-autoload": "^1.2.2",
     "lodash": "^4.17.15",
+    "mongoose": "^5.9.18",
     "nconf": "^0.10.0",
-    "pg": "^8.2.1",
-    "pg-hstore": "^2.3.3",
-    "sequelize": "^5.21.13",
     "uuidv4": "^6.1.0"
   },
   "scripts": {

@@ -1,10 +1,16 @@
 version: '3'
 services:
-    postgres:
-        image: 'postgres:latest'
+    mongo:
+        image: 'mongo:latest'
+        container_name: mongo
+        volumes:
+            - ./data:/data/db
         environment:
-            - POSTGRES_PASSWORD=root
+            MONGO_INITDB_ROOT_USERNAME: root
+            MONGO_INITDB_ROOT_PASSWORD: example
     api:
+        container_name: api
+        restart: always
         build:
             dockerfile: Dockerfile
             context: ./server
@@ -14,13 +20,14 @@ services:
         environment: 
             - REDIS_HOST=redis
             - REDIS_PORT=6379
-            - PGUSER=postgres
-            - PGHOST=postgres
-            - PGDATABASE=postgres
-            - PGPASSWORD=root
-            - PGPORT=5432
+            - MGUSERNAME=root
+            - MGHOST=mongo
+            - MGPASSWORD=example
+            - MGPORT=27017
+        links:
+            - mongo
         depends_on:
-            - postgres
+            - mongo
     nginx:
         build: 
             dockerfile: Dockerfile
