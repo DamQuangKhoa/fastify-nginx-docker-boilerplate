@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "fastify": "^2.14.1",
+    "fastify": "^2.15.1",
     "fastify-autoload": "^1.2.2",
     "lodash": "^4.17.15",
     "nconf": "^0.10.0",
